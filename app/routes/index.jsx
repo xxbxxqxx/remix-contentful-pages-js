@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { client } from "../models/contentful.server";
-import {FaGithub, FaLinkedin, FaTwitter, FaTwitch, FaYoutube} from 'react-icons/fa';
+//import {FaGithub, FaLinkedin, FaTwitter, FaTwitch, FaYoutube} from 'react-icons/fa';
 import { MetaFunction } from "@remix-run/node";
 
 export async function loader(){
@@ -58,11 +58,6 @@ export default function Index() {
 						</TextLoop>
 					</div>
 					<div className="mt-8 sm:mt-16 flex justify-between sm:mx-64 mx-12 dark:text-secondary">
-							<a href={links.GitHub} target="_blank" aria-label="GitHub"><FaGithub className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
-							<a href={links.Twitter} target="_blank" aria-label="Twitter"><FaTwitter className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
-							<a href={links.LinkedIn} target="_blank" aria-label="LinkedIn"><FaLinkedin className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
-							<a href={links.Twitch} target="_blank" aria-label="Twitch"><FaTwitch className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
-							<a href={links.YouTube} target="_blank" aria-label="YouTube"><FaYoutube className="h-12 w-12 sm:h-16 sm:w-16 fill-current" /></a>
 					</div>
 				</div>
   );
