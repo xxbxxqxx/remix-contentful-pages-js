@@ -1,12 +1,13 @@
 import { NavLink } from "@remix-run/react";
-import { useState } from "react";
+//import { useState } from "react";
 
 export default function NavBar() {
 
-    const [isOpen, setIsOpen] = useState(false);
+    //const [isOpen, setIsOpen] = useState(false);
+	const isOpen = false
 	const handleClick = (e) => {
 		e.preventDefault();
-		setIsOpen((previous) => !previous);
+		//setIsOpen((previous) => !previous);
 	};
 
     return (
